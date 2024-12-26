@@ -4,5 +4,5 @@ DMFR-YOLO: an infrared small hotspot detection algorithm based on double multi-s
 模块代码应该被复制到YOLOv8的conv.py文件中，并添加import<br>
 在task.pyd的parse_model()方法添加：<br>
 ```python
-        elif m in {Concat, MLFR}:
-            c2 = sum(ch[x] for x in f)
+elif m in {Concat, MLFR}:
+        c2 = sum(ch[x] for x in f)
